@@ -11,7 +11,7 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
     router.domainLocales.forEach((domain) => {
       console.log(domain.domain);
       if (domain.defaultLocale === loc) {
-        router.push(`${domain.domain}/?locale=${loc}`);
+        router.push(`${domain.domain}/${loc}`);
       }
     });
     setOpenMenu(!openMenu);
