@@ -8,7 +8,7 @@ module.exports = {
     localeDetection: true,
     domains: [
       {
-        domain: "exampleigus.com",
+        domain: "https://multilanguages.vercel.app/",
         defaultLocale: "en",
       },
       {
