@@ -4,7 +4,7 @@ module.exports = {
   images: {},
   i18n: {
     locales: ["en", "de", "fr"],
-    defaultLocale: "en",
+    defaultLocale: "de",
     localeDetection: true,
     domains: [
       {
@@ -12,11 +12,11 @@ module.exports = {
         defaultLocale: "en",
       },
       {
-        domain: "exampleigus.de",
+        domain: "https://multilanguages.vercel.app/",
         defaultLocale: "de",
       },
       {
-        domain: "exampleigus.fr",
+        domain: "https://multilanguages.vercel.app/",
         defaultLocale: "fr",
       },
     ],
