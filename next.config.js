@@ -8,15 +8,15 @@ module.exports = {
     localeDetection: true,
     domains: [
       {
-        domain: "https://multilanguages.vercel.app/",
+        domain: "https://multilanguages-six.vercel.app/",
         defaultLocale: "en",
       },
       {
-        domain: "https://multilanguages.vercel.app/",
+        domain: "https://multilanguages-six.vercel.app/",
         defaultLocale: "de",
       },
       {
-        domain: "https://multilanguages.vercel.app/",
+        domain: "https://multilanguages-six.vercel.app/",
         defaultLocale: "fr",
       },
     ],
