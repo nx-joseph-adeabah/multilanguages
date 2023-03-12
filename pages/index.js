@@ -16,7 +16,7 @@ export default function Home({ story, data, locale, locales, defaultLocale }) {
     language: locale,
   });
   
-  console.log("story", story)
+  console.log("data", data)
 
 
 
@@ -47,9 +47,7 @@ export async function getStaticProps({ locale, locales, defaultLocale }) {
   });
    
 
-   const res = await Storyblok.get("/spaces/204132/stories/", { 
-      folder_only: true,
-    });
+   const res = await Storyblok.get("/spaces/204132/stories/");
     
     let folda = res.data.stories.map((dat)=>{
       return dat.slug;
@@ -71,7 +69,7 @@ export async function getStaticProps({ locale, locales, defaultLocale }) {
     props: {
       defaultLocale,
       story: data ? data.story : false,
-      // data: res ? res.data : false,
+       data: res ? res.data : false,
       key: data ? data.story.id : false,
       // f: folda,
       locale,
