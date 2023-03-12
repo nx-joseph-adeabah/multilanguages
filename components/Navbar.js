@@ -17,14 +17,6 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
     setOpenMenu(!openMenu);
   };
 
-  // const changeLocale = (loc) => {
-  //    router.push(router.pathname, router.pathname, { locale: loc });
-  //    setOpenMenu(false);
-  //     };
-
-    console.log(router);
-
-
   return (
     <div {...storyblokEditable(blok)} className="max-w-full bg-orange-500 ">
       <div className="container mx-auto ">
