@@ -4,7 +4,7 @@ module.exports = {
   images: {},
   i18n: {
     locales: ["en", "de", "fr"],
-    defaultLocale: "de",
+    defaultLocale: "en",
     localeDetection: true,
     domains: [
       {
