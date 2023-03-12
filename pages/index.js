@@ -16,7 +16,7 @@ export default function Home({ story, locale, locales, defaultLocale }) {
     language: locale,
   });
   
-  // console.log("data", data)
+   console.log("locales", story)
 
 
 
