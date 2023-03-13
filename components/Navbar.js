@@ -12,13 +12,12 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
       if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
-      
       if(loc === 'en'){
-        window.location.pathname = `${router.domainLocales[0].domain}/${domain.defaultLocale}`;
+        router.push(`${router.domainLocales[0].domain}/${domain.defaultLocale}`);
       }
 
       if(loc === 'en-gb'){
-        window.location.pathname = `${router.domainLocales[0].domain}/${domain.defaultLocale}`;
+        router.push(`${router.domainLocales[0].domain}/${domain.defaultLocale}`);
       }
     });
     setOpenMenu(!openMenu);
