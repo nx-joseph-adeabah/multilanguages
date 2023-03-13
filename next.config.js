@@ -4,12 +4,16 @@ module.exports = {
   images: {},
   i18n: {
     locales: ["en", "de", "fr", "en-gb"],
-    defaultLocale: "de",
+    defaultLocale: "en",
     localeDetection: true,
     domains: [
       {
-        domain: "https://multilanguages-blond.vercel.app",
-        defaultLocale: "en" || "en-gb" ,
+        domain: "https://multilanguages-blond.vercel.app/en",
+        defaultLocale: "en" ,
+      },
+      {
+        domain: "https://multilanguages-blond.vercel.app/en-gb",
+        defaultLocale: "en-gb",
       },
       {
         domain: "https://multilanguages-de.vercel.app/",

@@ -9,14 +9,14 @@ import {
 } from "@storyblok/react";
 import Layout from "../components/Layout";
 
-export default function Home({ story, data, locale, locales, defaultLocale }) {
+export default function Home({ story, locale, locales, defaultLocale }) {
   
   story = useStoryblokState(story, {
      customParent: "http://localhost:3000/",
     language: locale,
   });
   
-  console.log("data", data)
+   console.log("locales", story)
 
 
 
@@ -42,16 +42,16 @@ export default function Home({ story, data, locale, locales, defaultLocale }) {
 
 export async function getStaticProps({ locale, locales, defaultLocale }) {
 
-  const Storyblok = new StoryblokClient({
-    oauthToken: "JSy2OVQ3xAKyCANBTC7foAtt-142837-fc7G7oFzxC8bp7qan7Z3",
-  });
+  // const Storyblok = new StoryblokClient({
+  //   oauthToken: "JSy2OVQ3xAKyCANBTC7foAtt-142837-fc7G7oFzxC8bp7qan7Z3",
+  // });
    
 
-   const res = await Storyblok.get("/spaces/204132/stories/");
+  //  const res = await Storyblok.get("/spaces/204132/stories/");
     
-    let folda = res.data.stories.map((dat)=>{
-      return dat.slug;
-    })
+  //   let folda = res.data.stories.map((dat)=>{
+  //     return dat.slug;
+  //   })
   let slug = "home";
   let loc = locale;
 
@@ -69,7 +69,7 @@ export async function getStaticProps({ locale, locales, defaultLocale }) {
     props: {
       defaultLocale,
       story: data ? data.story : false,
-       data: res ? res.data : false,
+      //  data: res ? res.data : false,
       key: data ? data.story.id : false,
       // f: folda,
       locale,
