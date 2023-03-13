@@ -5,7 +5,7 @@ module.exports = {
   i18n: {
     locales: ["en", "de", "fr", "en-gb"],
     defaultLocale: "en",
-    localeDetection: true,
+    // localeDetection: true,
     domains: [
       {
         domain: "https://multilanguages-blond.vercel.app/en",
