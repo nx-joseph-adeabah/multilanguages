@@ -13,7 +13,11 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
       if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
-      if(domain.defaultLocale === 'en' || domain.defaultLocale === 'en-gb'){
+      if(domain.defaultLocale === 'en'){
+        router.push(`${router.domainLocales[0].domain}/${loc}`);
+      }
+
+      if(domain.defaultLocale === 'en-gb'){
         router.push(`${router.domainLocales[0].domain}/${loc}`);
       }
     });
