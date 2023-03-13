@@ -15,11 +15,11 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
       }
 
       if(domain.defaultLocale === 'en'){
-        router.push(`${router.domainLocales[0].domain}/en`);
+        router.push(`${router.domainLocales[0].domain}/${loc}`);
       }
 
       if(domain.defaultLocale === 'en-gb'){
-        router.push(`${router.domainLocales[0].domain}/en-gb`);
+        router.push(`${router.domainLocales[0].domain}/${loc}`);
       }
     });
     setOpenMenu(!openMenu);
