@@ -8,11 +8,11 @@ module.exports = {
     localeDetection: true,
     domains: [
       {
-        domain: "https://multilanguages-blond.vercel.app/",
+        domain: "https://multilanguages-blond.vercel.app/en",
         defaultLocale: "en" ,
       },
       {
-        domain: "https://multilanguages-blond.vercel.app/",
+        domain: "https://multilanguages-blond.vercel.app/en-gb",
         defaultLocale: "en-gb",
       },
       {
