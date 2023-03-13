@@ -15,7 +15,7 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
       }
 
       if(domain.defaultLocale === 'en'){
-        router.push(`${router.domainLocales[0].domain}`);
+        router.push(`${router.domainLocales[0].domain}/${loc}`);
       }
 
       if(domain.defaultLocale === 'en-gb'){
