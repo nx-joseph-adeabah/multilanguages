@@ -4,8 +4,8 @@ module.exports = {
   images: {},
   i18n: {
     locales: ['en', 'de', 'fr', 'en-gb'],
-    defaultLocale: 'de',
-    localeDetection: false,
+    defaultLocale: 'en',
+    localeDetection: true,
     domains: [
       {
         domain: 'https://multilanguages-english.vercel.app',
