@@ -13,11 +13,11 @@ module.exports = {
         locales:['en-gb']
       },
       {
-        domain: 'https://multilanguages-de.vercel.app/',
+        domain: 'https://multilanguages-de.vercel.app',
         defaultLocale: 'de',
       },
       {
-        domain: 'https://multilanguages-fr.vercel.app/',
+        domain: 'https://multilanguages-fr.vercel.app',
         defaultLocale: 'fr',
       },
     ],
