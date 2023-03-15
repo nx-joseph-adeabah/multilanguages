@@ -31,7 +31,7 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-2xl font-bold text-white">{blok.logo}</a>
+              <a className="text-2xl font-bold text-white">{blok?.logo}</a>
             </Link>
           </div>
           <div className="flex items-center">
