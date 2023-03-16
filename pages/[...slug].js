@@ -11,7 +11,6 @@ import {
 export default function Page({ story, locale, locales, defaultLocale }) {
   story = useStoryblokState(story, { language: locale });
 
-
   return (
     <div className={styles.container}>
       <Head>
@@ -49,7 +48,6 @@ export async function getStaticProps({
 
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
-
 
   return {
     props: {
