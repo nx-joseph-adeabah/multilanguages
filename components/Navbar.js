@@ -9,10 +9,13 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
 
   const changeLocale = (loc) => {
     router.domainLocales.forEach((domain) => {
-      console.log("domain", domain.domain);
-      if (domain.defaultLocale === 'en-GB') {
-        router.push(`${router.domainLocales[0].domain}/${loc}`);
+      // if (domain.defaultLocale === 'en') {
+      //   router.push(`${router.domainLocales[0].domain}/${loc}`);  
+      // }
+      if (loc === 'en-GB' || loc === 'en') {
+        router.push(`${router.domainLocales[0].domain}`, '/', { locale: loc })        
       }
+
       if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
@@ -64,7 +67,7 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
                   aria-expanded={openMenu}
                   onClick={() => setOpenMenu(!openMenu)}
                 >
-                  {defaultLocale}
+                  {locale}
                   <svg
                     className="w-5 h-5 ml-2 -mr-1"
                     xmlns="http://www.w3.org/2000/svg"
