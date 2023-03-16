@@ -9,21 +9,13 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
 
   const changeLocale = (loc) => {
     router.domainLocales.forEach((domain) => {
-      if (domain.defaultLocale) {
+      console.log(domain.domain);
+      if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
-      // if(domain.defaultLocale === 'en'){
-      //   router.push(`${router.domainLocales[0].domain}/${loc}`);
-      // }
-
-      // if(domain.defaultLocale === 'en-gb'){
-      //   router.push(`${router.domainLocales[0].domain}/${loc}`);
-      // }
     });
     setOpenMenu(!openMenu);
   };
-
-  // console.log("domains", router)
 
   return (
     <div {...storyblokEditable(blok)} className="max-w-full bg-orange-500 ">
@@ -31,7 +23,7 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-2xl font-bold text-white">{blok?.logo}</a>
+              <a className="text-2xl font-bold text-white">{blok.logo}</a>
             </Link>
           </div>
           <div className="flex items-center">
