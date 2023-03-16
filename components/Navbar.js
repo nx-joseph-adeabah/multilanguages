@@ -15,9 +15,12 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
       //   router.push(`${router.domainLocales[0].domain}/${loc}`);  
       // }
       if (loc === 'en-GB') {
-        router.push(`${router.domainLocales[0].domain}`)
+        router.push(`${router.domainLocales[0].domain}/${loc}`)
         // router.push(`${router.domainLocales[0].domain}/${loc}`);  
+      }else{
+        router.push(`${router.domainLocales[0].domain}`)
       }
+
       if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
