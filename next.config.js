@@ -9,8 +9,8 @@ module.exports = {
     domains: [
       {
         domain: 'https://multilanguages-nu.vercel.app',
-        defaultLocale: 'en',
-        locales:['en-gb']
+        defaultLocale: 'en' || 'en-gb',
+        // locales:['en-gb']
       },
       {
         domain: 'https://multilanguages-de.vercel.app',
