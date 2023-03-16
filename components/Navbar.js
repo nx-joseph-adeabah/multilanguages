@@ -9,7 +9,10 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
 
   const changeLocale = (loc) => {
     router.domainLocales.forEach((domain) => {
-      console.log(domain.domain);
+      console.log("domain", domain.domain);
+      if (domain.defaultLocale === 'en' || domain.defaultLocale === 'en-GB') {
+        router.push(`${domain[0].domain}/${loc}`);
+      }
       if (domain.defaultLocale === loc) {
         router.push(`${domain.domain}/${loc}`);
       }
@@ -17,7 +20,6 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
     setOpenMenu(!openMenu);
   };
 
-  console.log("first", locales)
 
   return (
     <div {...storyblokEditable(blok)} className="max-w-full bg-orange-500 ">
