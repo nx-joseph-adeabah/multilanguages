@@ -10,10 +10,10 @@ export default function Navbar({ blok, locale, locales, defaultLocale }) {
   const changeLocale = (loc) => {
     router.domainLocales.forEach((domain) => {
       console.log("domain", domain.domain);
-      if (domain.defaultLocale === 'en') {
-        router.push(`${router.domainLocales[0].domain}`)
-        // router.push(`${router.domainLocales[0].domain}/${loc}`);  
-      }
+      // if (domain.defaultLocale === 'en') {
+      //   router.push(`${router.domainLocales[0].domain}`)
+      //   router.push(`${router.domainLocales[0].domain}/${loc}`);  
+      // }
       if (loc === 'en-GB') {
         router.push(`${router.domainLocales[0].domain}/${loc}`)
         // router.push(`${router.domainLocales[0].domain}/${loc}`);  
